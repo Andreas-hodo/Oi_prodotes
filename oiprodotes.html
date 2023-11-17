@@ -1,0 +1,212 @@
+<html>
+<head><title>Οι προδότες</title>
+<meta charset="UTF-8"></meta>
+</head>
+<body>
+<div id = "day">Ημερα:0</div>   
+<div id = "money">Χρηματα: <span id = "span_money">0.00€</span><input type = "number" id = "inmoney"placeholder = "Χρήματα σε €"></input></div>  
+<div id = "winners">Νικητης/τες:<span id = "name_win">Ονομα:</span><span id = "money_win">Χρηματα:</span><span id = "percentage_win">Ποσοστο:</span><span id = "property_win">Ιδιοτητα:</span></div>
+<div id = "container">
+
+</div>
+<div id = "prob_winners">Πιθανοι Νικης:<span id = "name_probwin">Ονομα:</span><span id = "votes_probwin">Ψηφοι:</span><span id = "guns_probwin">Οπλα:</span><span id = "percentage_probwin">Ποσοστο:</span></div>
+<div id = "container">
+
+</div>
+<div id = "dead">Θανατικη Ποινη:<span id = "dead_name">Ονομα:</span><span id = "dead_votes">Ψηφοι:</span><span id = "dead_guns">Οπλα:</span></div>
+<div id = "container">
+
+</div>
+<div id = "to_die">Για δολοφoνια:<span id = "to_die_name">Ονομα:</span><span id = "to_die_votes">Ψηφοι:</span><span id = "to_die_guns">Οπλα:</span><span id = "to_die_percentage">Ποσοστο:</span></div>
+<div id = "container">
+
+</div>
+<div id = "change">Στρατολογηση:<span id = "change_name">Ονομα:</span><span id = "change_votes">Ψηφοι:</span><span id = "change_guns">Οπλα:</span><span id = "change_percentage">Ποσοστο:</span></div>
+<div id = "container">
+
+</div>
+<div id = "cut">Αποσπασμα:<span id = "cut_name">Ονομα:</span><span id = "cut_votes">Ψηφοι:</span><span id = "cut_guns">Οπλα:</span><span id = "cut_percentage">Ποσοστο:</span></div>
+<div id = "container">
+ 
+</div> 
+<div id = "tryng_to">Εκβιασμος:<span id = "trying_to_name">Ονομα:</span><span id = "trying_to_votes">Ψηφοι:</span><span id = "trying_to_guns">Οπλα:</span><span id = "tryng_to_percentage">Ποσοστο:</span></div>
+<div id = "container">
+   
+</div>
+<div id = "traitors">Προδότες:<span id = "traitor_name">Ονομα:</span><span id = "traitor_votes">Ψηφοι:</span><span id = "traitor_guns">Οπλα:</span><span id = "traitor_percentage">Ποσοστο:</span></div><div id = "container"></div>
+<div id = "loyal">Πιστοι:<span id = "loyal_name">Ονομα:</span><span id = "loyal_votes">Ψηφοι:</span><span id = "loyal_guns">Οπλα:</span><span id = "loyal">Ποσοστο:</span></div><div id = "container"></div>
+<div id = "dead">Δολοφονημένοι:<span id = "dead_name">Ονομα:</span><span id = "dead_votes">Ψηφοι:</span><span id = "dead_guns">Οπλα:</span><span id = "dead_property">Ιδιοτητα:</div><div id = "container"></div>
+<div id = "banished">Διωγμένοι:<span id = "banished_name">Ονομα:</span><span id = "banished_votes">Ψηφοι:</span><span id = "banished_guns">Οπλα:</span><span id = "banished_property">Ιδιοτητα:</span>
+</div>
+<div id = "container">
+
+</div>
+<div class = "draggable" id = "player"draggable = "true">1)Αναστασια Π. (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">2)Βασιλης      (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">3)Σια (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">4)Ιασονας (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">5)Θανος (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">6)Σπυρος (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">7)Αντωνης (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">8)Μαρια Γκ. (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">9)Ευα (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">10)Μαριαννα  (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">11)Verone (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">12)Γιωργος Κ. (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">13)Μαρια Θ. (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">14)Γιωργος Μ. (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">15)Μαρινα (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">16)Γιαννης (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">17)Γιωργος Ρ. (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">18)Κατερινα  (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">19)Κων/νος (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">20)Γωγω (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">21)Αναστασια Τ. (+0) (----)</div>
+<div class = "draggable" id = "player"draggable = "true">22)Γιωργος Τ. (+0) (----)</div>
+</body> 
+<!--<script>
+const draggables = document.querySelectorAll('.draggable')  
+const containers = document.querySelectorAll('#container')
+draggables.forEach( draggable =>{
+   draggable.addEventListener("dragstart",()=>{
+       draggable.classList.add("dragging")
+   })
+   draggable.addEventListener("dragend",()=>{
+     draggable.classList.remove("dragging") 
+   })
+})
+containers.forEach(container =>{
+   container.addEventListener("dragover", e =>{
+      e.preventDefault()
+      const afterElement =  getDragAfterElement(container,e.clientY)
+      var draggable = document.querySelector(".dragging")
+      if (afterElement == null){
+         container.appendChild(draggable)
+
+      }else{
+         container.insertBefore(draggable,afterElement)
+      } 
+   })
+})
+function getDragAfterElement(container,y){
+ const draggableElements = [...container.querySelectorAll(".draggable:not(.dragging)")]
+ return draggableElements.reduce((closest,child)=>{
+  const box = child.getBoundingClientRect()
+  const offset = y - box.top - box.height / 2
+  if (offset < 0 && offset > closest.offset){
+   return {offset:offset,element:child}
+  }else {
+   return closest
+  }
+ },{offset: Number.NEGATIVE_INFINITY}).element
+}
+
+</script>-->
+<script>
+const draggables = document.querySelectorAll('.draggable');
+const containers = document.querySelectorAll('#container');
+
+draggables.forEach(draggable => {
+    draggable.addEventListener("dragstart", () => {
+        draggable.classList.add("dragging");
+    });
+    draggable.addEventListener("dragend", () => {
+        draggable.classList.remove("dragging");
+    });
+});
+
+containers.forEach(container => {
+    container.addEventListener("dragover", e => {
+        e.preventDefault();
+        const afterElement = getDragAfterElement(container, e.clientY);
+        var draggable = document.querySelector(".dragging");
+        if (afterElement == null) {
+            container.appendChild(draggable);
+        } else {
+            container.insertBefore(draggable, afterElement);
+        }
+        updateContainerHeight(container);
+    });
+});
+
+function getDragAfterElement(container, y) {
+    const draggableElements = [...container.querySelectorAll(".draggable:not(.dragging)")];
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
+        } else {
+            return closest;
+        }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+}
+
+function updateContainerHeight(container) {
+    const draggableElements = container.querySelectorAll(".draggable");
+    const containerHeight = draggableElements.length * 18; // Προσαρμόστε το ύψος ανάλογα με τις ανάγκες σας
+    container.style.height = containerHeight + "px";
+}
+
+</script>
+<button type ="button" id = "btnadd" disabled>+</button><button type ="button" id = "btndone" disabled>✓</button><button type ="button" id = "btndone_money" disabled>✓</button>
+<style>
+.dragging{
+opacity: .5;
+background-color: yellow;
+}
+#container{
+   background-color: white;
+   border: solid black 2px; 
+   height: 1rem;
+}
+
+body{
+background-color:#c53921;
+margin: 20px;
+position: absolute;
+}  
+
+#btnadd,#btndone,#inmoney,#btndone_money{
+   display: none;  
+}
+</style>
+<script>
+var day = document.getElementById("day").addEventListener("click",addButton)  
+function addButton(){
+var btnadd = document.getElementById("btnadd").style.display = "inline-block"
+var btnadd = document.getElementById("btnadd").removeAttribute("disabled")
+var btndone = document.getElementById("btndone").style.display = "inline-block"
+var btnadd = document.getElementById("btndone").removeAttribute("disabled")
+}
+var buttonadd = document.getElementById("btnadd").addEventListener("click",add)
+var counter = 0;
+function add(){
+counter++;
+var day = document.getElementById("day").innerText = "Ημέρα:"+counter;
+}
+var btndone = document.getElementById("btndone").addEventListener("click",close) 
+function close(){
+var btndone = document.getElementById("btndone").style.display = "none"   
+document.getElementById("btnadd").style.display = "none"   
+}
+var money = document.getElementById("money").addEventListener("click",moneyfunct)
+function moneyfunct(){
+var inmoney = document.getElementById("btndone_money").style.display = "block"
+var inmoney = document.getElementById("btndone_money").removeAttribute("disabled")
+var inmoney = document.getElementById("inmoney").style.display = "inline-block"
+var span_money = document.getElementById("span_money").style.display = "none"
+}
+var btndone_money = document.getElementById("btndone_money").addEventListener("click",btnmoney)
+var money_counter = 0;
+function btnmoney(){
+var btndone_money = document.getElementById("btndone_money").style.display = "none"  
+var id_money = parseInt(document.getElementById("inmoney").value)
+var inmoney = document.getElementById("inmoney").style.display = "none"
+var span_money = document.getElementById("span_money").style.display = "inline-block" 
+money_counter = money_counter+id_money
+var span_money = document.getElementById("span_money").innerText = money_counter+"€"
+}
+</script>
+</body>
+</html>
